@@ -14,7 +14,9 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
-
+/*
+* https://github.com/layerlre/Android-Utility-Class/blob/master/utils/picasso-util/PicassoTrustAll.java
+* */
 public class PicassoTrustAll {
 
         private static Picasso mInstance = null;
