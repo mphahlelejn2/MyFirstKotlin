@@ -2,6 +2,7 @@ package com.kamo.myfirstkotlin.repo
 import com.kamo.myfirstkotlin.news.ServerResponse
 import io.reactivex.Maybe
 import retrofit2.http.GET
+import retrofit2.http.Query
 
 
 /**
@@ -10,6 +11,6 @@ import retrofit2.http.GET
 interface RESTClient {
 
     @GET(UrlManager.POLITICS_END_POINT)
-    fun getNewsList():Maybe<ServerResponse>
+    fun getNewsList(@Query("api-key")api_key:String):Maybe<ServerResponse>
 
 }
